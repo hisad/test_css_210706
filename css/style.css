@@ -1,48 +1,94 @@
-.flex {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 20px;
+.firstview {
+  position: relative;
 }
 
-.company {
-  color: #00008b;
-  font-size: 24px;
+.firstview__img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
-.cat {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  color: #00008b;
+
+.firstview__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}
+
+.content {
+  font-size: 30px;
+  text-align: center;
+  margin: 70px auto;
+}
+
+.content__about--text {
   font-size: 14px;
-  font-weight: 700;
-  margin-top: 5px;
+  text-align: center;
+  line-height: 30px;
 }
-.cat_item {
-  width: 90px;
+
+.content__blog {
+  display: flex;
+  justify-content: center;
 }
-.top {
-  position: relative;
-  margin-top: 100px;
+
+.content__blog--item {
+  width: 250px;
+  margin: 0 10px;
 }
-.top_img img {
+
+.content__blog--text {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 15px auto;
+}
+
+.content__blog--img {
   width: 100%;
 }
-.top_img {
-  margin: 0 0 0 auto;
+
+.content__contact {
+  display: flex;
+  justify-content: center;
+}
+
+tr {
+  width: 780px;
+  line-height: 30px;
+}
+
+.content__contact--ttl {
+  width: 200px;
+  text-align: left;
+}
+
+.content__contact--btn {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-bottom: 70px;
+}
+
+.content__contact--btn-del {
+  width: 200px;
+  color: #000000;
+  background: #dcdcdc;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
   display: block;
-  width: 50%;
 }
-.top_ttl {
-  position: absolute;
-  bottom: 20%;
-  font-size: 50px;
-  font-weight: 100;
-}
-.top_line {
-  position: absolute;
-  top: 80%;
-  background-color: #00008b;
-  width: 75%;
-  height: 40%;
-  z-index: -1;
+
+.content__contact--btn-send {
+  width: 200px;
+  color: #ffffff;
+  background: #66cdaa;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  display: block;
 }
